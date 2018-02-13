@@ -10,7 +10,10 @@ namespace SoftwareTestingApp.Tests
     [TestFixture]
     public class CalcPremiumTests
     {
-        [TestCase(25, "female", 5.0)]
+        [TestCase(20, "female", 5.0)]
+        [TestCase(57, "female", 0.375)]
+        [TestCase(16, "female", 0)]
+        [TestCase(16, "male", 0)]
         public void TestPremiumCalculator(int age, string gender, double expected)
         {
             var sut = new Insurance();
