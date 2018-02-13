@@ -8,9 +8,9 @@ namespace SoftwareTestingApp
 {
     public class Insurance
     {
-        public float CalcPremium(int age, string gender)
+        public double CalcPremium(int age, string gender)
         {
-            float premium;
+            double premium;
 
             if (gender == "female")
 	            if ((age >= 18) && (age <= 30))
@@ -25,7 +25,7 @@ namespace SoftwareTestingApp
                     premium = 6.0;
                 else
                     if (age >= 36)
-                    premium = 5.0;
+                        premium = 5.0;
                     else
                         premium = 0.0;
             else
