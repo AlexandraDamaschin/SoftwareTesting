@@ -14,7 +14,6 @@ namespace SoftwareTestingApp.Tests
         [TestCase(57, "female", 0.375)]
         [TestCase(16, "female", 0)]
         [TestCase(16, "male", 0)]
-        [TestCase(25, "female", 5.0)]
 
         [TestCase(20, "male", 6.0)]
         [TestCase(57, "male", 0.75)]
