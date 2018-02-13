@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6208A5A2-3DCB-4340-AE3F-68ABAE2E7715}</ProjectGuid>
+    <ProjectGuid>{08B92C95-1BCE-4BAD-A97E-83496B2983F5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SoftwareTestingApp</RootNamespace>
-    <AssemblyName>SoftwareTestingApp</AssemblyName>
+    <RootNamespace>SoftwareTestingApp.Tests</RootNamespace>
+    <AssemblyName>SoftwareTestingApp.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -46,11 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Insurance.cs" />
+    <Compile Include="CalcPremiumTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SoftwareTestingApp\SoftwareTestingApp.csproj">
+      <Project>{6208a5a2-3dcb-4340-ae3f-68abae2e7715}</Project>
+      <Name>SoftwareTestingApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
