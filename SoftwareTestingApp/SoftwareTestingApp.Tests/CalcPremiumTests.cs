@@ -23,7 +23,6 @@ namespace SoftwareTestingApp.Tests
         [TestCase(45, "nogender", 0.0)]
         [TestCase(55, "nogender", 0.0)]
 
->>>>>>> Stashed changes
         public void TestPremiumCalculator(int age, string gender, double expected)
         {
             var sut = new Insurance();
