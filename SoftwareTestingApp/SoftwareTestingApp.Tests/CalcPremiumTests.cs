@@ -10,14 +10,12 @@ namespace SoftwareTestingApp.Tests
     [TestFixture]
     public class CalcPremiumTests
     {
-        [Test]
-        public void TestTest()
+        [TestCase(25, "female", 5.0)]
+        public void TestPremiumCalculator(int age, string gender, double expected)
         {
             var sut = new Insurance();
-
-            var result = sut.CalcPremium(100,"female");
-
-            Assert.That(result, Is.GreaterThan(0));
+            var result = sut.CalcPremium(age, gender);
+            Assert.That(result, Is.EqualTo(expected));
         }
     }
 }
