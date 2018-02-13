@@ -26,8 +26,8 @@ namespace SoftwareTestingApp
                 else
                     if (age >= 36)
                         premium = 5.0;
-                    else
-                        premium = 0.0;
+                else
+                    premium = 0.0;
             else
 		        premium = 0.0;
 
