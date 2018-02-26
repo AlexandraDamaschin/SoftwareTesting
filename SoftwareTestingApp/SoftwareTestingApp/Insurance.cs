@@ -1,4 +1,5 @@
-﻿using System;
+﻿using fit;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,8 +34,23 @@ namespace SoftwareTestingApp
 
             if (age >= 50)
                 premium = premium * 0.15;
+
             return premium;
         }
 
+    }
+
+
+    public class PremiumSheetTest : ColumnFixture
+    {
+        public string gender;
+        public int age;
+
+        public Insurance ins = new Insurance();
+
+        public double Premium()
+        {
+            return ins.CalcPremium(age, gender);
+        }
     }
 }
