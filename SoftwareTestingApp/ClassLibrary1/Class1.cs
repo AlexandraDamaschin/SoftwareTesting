@@ -43,7 +43,7 @@ namespace SeleniumTests
         [Test]
         public void TheWorkingTest()
         {
-            driver.Navigate().GoToUrl("http://localhost:51355/Default");
+            driver.Navigate().GoToUrl("http://localhost:51355");
             driver.FindElement(By.Name("Age")).Clear();
             driver.FindElement(By.Name("Age")).SendKeys("20");
             driver.FindElement(By.Name("Gender")).Click();
