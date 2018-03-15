@@ -41,7 +41,7 @@ namespace SeleniumTests
         }
 
         [Test]
-        public void TheWorkingTest()
+        public void Selenium_Test()
         {
             driver.Navigate().GoToUrl("http://localhost:51355/Default");
             driver.FindElement(By.Name("Age")).Clear();
